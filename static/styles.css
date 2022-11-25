@@ -1,0 +1,28 @@
+/* General CSS */
+html, body {
+	font-family: 'Martel', serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+
+/* links */
+a {
+    color: black;
+    display:inline-block;
+    line-height: 1.6rem;
+    margin-right:1rem;
+    padding: 0 2px;
+    text-decoration:none;
+    border-bottom: solid 2px #ef8b80;
+    transition: background 0.3s cubic-bezier(.33,.66,.66,1);
+}
+a:hover {
+    background: #ef8b80;
+}
+a:visited {
+    color: black;
+}

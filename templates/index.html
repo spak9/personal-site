@@ -1,19 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-  <meta charset="utf-8">
-  <title>MyBlog</title>
-  <link rel="stylesheet" type="text/css" href="{{ get_url(path='styles.css') }}">
-</head>
+{% block pagebody %}
+<h1>Steven Pak.</h1>
+<p>Hi there.
+  <br>
+  My name is Steven. I'm currently a student at
+  George Mason University studying Computer Science.
+  I made this website not only for resume-sake,
+  but also to record some of my thoughts regarding books
+  or perhaps anything that inspires me to write.
+  I know the site looks quite bare-bones,
+  but I think I like it.
+  CSS is also not my strong suit by any means so...
+</p>
 
-<body>
-  <section class="section">
-    <div class="container">
-      {% block content %} {% endblock %}
-      <h1>Steven Pak</h1>
+<div class="container-posts">
+  <h2>Recent Posts:</h2>
+  {% set blog_section = get_section(path="blog/_index.md") %}
+  {% for page in blog_section.pages %}
+    {% if loop.index == 3 %}{% break %}{% endif %}
+    <div class="post-box">
+      <span>
+        <h3>{{ page.date }}:<a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+      </span>
+      <p>{{ page.description | truncate(length=100) | safe }}</p>
     </div>
-  </section>
-</body>
-
-</html>
+  {% endfor %}
+</div>
+{% endblock pagebody %}

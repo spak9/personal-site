@@ -1,9 +1,9 @@
 /* General CSS */
 html, body {
-	font-family: 'Martel', serif;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    font-family: 'Martel', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
@@ -25,4 +25,52 @@ a:hover {
 }
 a:visited {
     color: black;
+}
+svg {
+    width:100%;
+    height:100%;
+    background:transparent;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+}
+.page-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+.page-body {
+
+}
+.page-footer {
+    
+}
+.github-icon{
+    all:revert;
+    margin-left:auto;
+    width:1.6rem;
+    height:1.6rem;
+    fill:#8EA29E;
+    transition: fill .3s;
+}
+.github-icon:hover {
+    background:none;
+    fill:#6e5494;
+}
+.container-posts {
+    display:flex;
+    flex-direction:column;
+}
+.post-box {
+    width: 75%;
+    border: solid 3px #8EA29E;/*#CCAE87;*/
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding:0 1rem;
+    border-radius: 10px;
 }

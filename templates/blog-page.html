@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block pagebody %}
+
+	<h1 class="title">{{ page.title }}</h1>
+	<p class="dates"><small>{{ page.date }}</small></p>
+	{% if page.updated %}
+		<p class="dates"><small>Updated: {{ page.updated }}</small></p>
+	{% endif %}
+
+	{{ page.content | safe}}
+
+{% endblock pagebody %}

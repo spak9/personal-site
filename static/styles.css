@@ -4,6 +4,7 @@ html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
@@ -37,6 +38,7 @@ svg {
     flex-direction: column;
     margin: 0 auto;
     width: 50%;
+    height:100%;
 }
 .page-header {
     display: flex;
@@ -48,7 +50,9 @@ svg {
 
 }
 .page-footer {
-    
+    margin-top: auto;
+    margin-bottom: 16px;
+    text-align: center;
 }
 .github-icon{
     all:revert;
@@ -68,9 +72,15 @@ svg {
 }
 .post-box {
     width: 75%;
-    border: solid 3px #8EA29E;/*#CCAE87;*/
+    border: solid 3px #8EA29E;
     margin: 0 auto;
     margin-bottom: 1rem;
     padding:0 1rem;
     border-radius: 10px;
+}
+.dates {
+    margin: 0;
+}
+.title {
+    text-align: center;
 }

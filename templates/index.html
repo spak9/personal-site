@@ -6,7 +6,7 @@
   <br>
   My name is Steven. I'm currently a mobile forensics software engineer at
   ManTech learning a lot about Android/iOS application security and obscure data serialization. I 
-  also graduated with B.S in Computer Science from George Mason University in
+  also graduated with a B.S in Computer Science from George Mason University in
   2021.
   <br><br>
   I made this website not only for resume-sake,
@@ -24,7 +24,7 @@
     {% if loop.index == 3 %}{% break %}{% endif %}
     <div class="post-box">
       <span>
-        <h3>{{ page.date }}:<a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+        <p>{{ page.date }}: <a href="{{ page.permalink }}">{{ page.title }}</a></p>
       </span>
       <p>{{ page.description | truncate(length=100) | safe }}</p>
     </div>

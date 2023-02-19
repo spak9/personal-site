@@ -1,5 +1,5 @@
 +++
-title = "2023 Midway Goals"
+title = "Midway Goals of 2023"
 date = 2023-02-19
 description = """
 """

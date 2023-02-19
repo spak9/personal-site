@@ -14,11 +14,13 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: black;
     display:inline-block;
-    line-height: 1.6rem;
-    margin-right:1rem;
-    padding: 0 2px;
-    text-decoration:none;
-    border-bottom: solid 2px #ef8b80;
+    text-underline-offset: 8px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    //line-height: 1.6rem;
+    text-decoration-color: #ef8b80;
+    // text-decoration:none;
+    // border-bottom: solid 2px #ef8b80;
     transition: background 0.3s cubic-bezier(.33,.66,.66,1);
 }
 a:hover {
@@ -26,6 +28,9 @@ a:hover {
 }
 a:visited {
     color: black;
+}
+.page-header > a {
+    margin-right:1rem;
 }
 svg {
     width:100%;

@@ -2,7 +2,7 @@
 title = "Midway Goals of 2023"
 date = 2023-02-19
 updated = 2023-02-26
-description = """
+description = """It's been exactly two years since I wrote my first post and I've always been tempted to delete it and start new. Partly because it's poorly written and a bit embarrassing to read, but mostly because I actually have
 """
 +++
 

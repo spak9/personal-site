@@ -5,6 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    scrollbar-gutter: stable both-edges;        /* SO IMPORTANT TO HANDLE PAGES LONGER THAN 100% */
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
@@ -17,10 +18,7 @@ a {
     text-underline-offset: 8px;
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
-    //line-height: 1.6rem;
     text-decoration-color: #ef8b80;
-    // text-decoration:none;
-    // border-bottom: solid 2px #ef8b80;
     transition: background 0.3s cubic-bezier(.33,.66,.66,1);
 }
 a:hover {

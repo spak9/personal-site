@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>August Date Nights</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap');
+
+:root{
+  --cream: #FAF6F0;
+  --plum: #5B3A4E;
+  --peach: #E8A87C;
+  --sage: #7C9070;
+  --gold: #C9A45C;
+  --ink: #3A2E35;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+  background: var(--cream);
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(232,168,124,0.12), transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(124,144,112,0.12), transparent 40%);
+  font-family: 'Nunito Sans', sans-serif;
+  color: var(--ink);
+  padding: 48px 20px;
+  min-height: 100vh;
+}
+
+.wrap{ max-width: 640px; margin: 0 auto; }
+
+.eyebrow{
+  text-align:center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h1{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 44px;
+  text-align: center;
+  color: var(--plum);
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.sub{
+  text-align:center;
+  font-size: 15px;
+  color: var(--ink);
+  opacity: 0.65;
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  margin-bottom: 56px;
+}
+
+.trail{
+  position: relative;
+  padding-left: 6px;
+}
+
+.trail::before{
+  content: '';
+  position: absolute;
+  left: 29px;
+  top: 18px;
+  bottom: 18px;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--gold) 0px, var(--gold) 6px,
+    transparent 6px, transparent 13px
+  );
+}
+
+.stop{
+  position: relative;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+.stop:last-child{ margin-bottom: 0; }
+
+.marker{
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 2px solid var(--gold);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--plum);
+  z-index: 2;
+  box-shadow: 0 3px 10px rgba(91,58,78,0.12);
+}
+
+.card{
+  flex: 1;
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 4px 18px rgba(91,58,78,0.08);
+  border: 1px solid rgba(201,164,92,0.25);
+}
+
+.date-row{
+  display:flex;
+  align-items:baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.date{
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 700;
+}
+
+.tag{
+  font-size: 11px;
+  color: var(--peach);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.title{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--plum);
+  margin-bottom: 6px;
+}
+
+.desc{
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink);
+  opacity: 0.8;
+}
+
+.icon{
+  font-size: 22px;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 56px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--plum);
+  opacity: 0.75;
+}
+
+@media (max-width: 480px){
+  h1{ font-size: 34px; }
+  .stop{ gap: 14px; }
+  .marker{ width: 46px; height: 46px; font-size: 17px; }
+  .card{ padding: 16px 18px; }
+  .trail::before{ left: 23px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Three Saturdays</div>
+  <h1>Our August Trail</h1>
+  <div class="sub">a little path of dates, wherever it leads</div>
+
+  <div class="trail">
+    <div class="stop">
+      <div class="marker">1</div>
+      <div class="card">
+        <div class="date-row">
+          <span class="date">Saturday, Aug 1</span>
+          <span class="tag">Hands-on</span>
+        </div>
+        <div class="title">🥟 Soup Dumplings, From Scratch</div>
+        <div class="desc">No more steak bites or "butter milk chicken" - today, we learn how to make real food!</div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <div class="marker">2</div>
+      <div class="card">
+        <div class="date-row">
+          <span class="date">Saturday, Aug 8</span>
+          <span class="tag">Dinner + drinks</span>
+        </div>
+        <div class="title">🥂 Anju & Press Club</div>
+        <div class="desc">A long time coming, but finally got it... just in case of let down, let's get some drinks :)</div>
+      </div>
+    </div>
+
+    <div class="stop">
+      <div class="marker">3</div>
+      <div class="card">
+        <div class="date-row">
+          <span class="date">Saturday, Aug 22</span>
+          <span class="tag">Out & about</span>
+        </div>
+        <div class="title">🦕 Natural History & Dinner</div>
+        <div class="desc">Thank God museums are free, am I right?! Let's go back to our favorite play date.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">can't wait for these ✨</div>
+</div>
+</body>
+</html>
